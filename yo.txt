@@ -1,0 +1,198 @@
+modules/
+├── articles
+│   ├── client
+│   │   ├── articles.client.module.js
+│   │   ├── config
+│   │   │   ├── articles.client.config.js
+│   │   │   └── articles.client.routes.js
+│   │   ├── controllers
+│   │   │   └── articles.client.controller.js
+│   │   ├── services
+│   │   │   └── articles.client.service.js
+│   │   └── views
+│   │       ├── create-article.client.view.html
+│   │       ├── edit-article.client.view.html
+│   │       ├── list-articles.client.view.html
+│   │       └── view-article.client.view.html
+│   ├── server
+│   │   ├── controllers
+│   │   │   └── articles.server.controller.js
+│   │   ├── models
+│   │   │   └── article.server.model.js
+│   │   ├── policies
+│   │   │   └── articles.server.policy.js
+│   │   └── routes
+│   │       └── articles.server.routes.js
+│   └── tests
+│       ├── client
+│       │   └── articles.client.controller.tests.js
+│       ├── e2e
+│       │   └── articles.e2e.tests.js
+│       └── server
+│           ├── article.server.model.tests.js
+│           └── article.server.routes.tests.js
+├── chat
+│   ├── client
+│   │   ├── chat.client.module.js
+│   │   ├── config
+│   │   │   ├── chat.client.config.js
+│   │   │   └── chat.client.routes.js
+│   │   ├── controllers
+│   │   │   └── chat.client.controller.js
+│   │   ├── css
+│   │   │   └── chat.css
+│   │   └── views
+│   │       └── chat.client.view.html
+│   ├── server
+│   │   └── sockets
+│   │       └── chat.server.socket.config.js
+│   └── tests
+│       ├── client
+│       │   └── chat.client.controller.tests.js
+│       ├── e2e
+│       │   └── chat.e2e.tests.js
+│       └── server
+│           └── chat.socket.tests.js
+├── core
+│   ├── client
+│   │   ├── app
+│   │   │   ├── config.js
+│   │   │   └── init.js
+│   │   ├── config
+│   │   │   ├── core-admin.client.menus.js
+│   │   │   ├── core-admin.client.routes.js
+│   │   │   └── core.client.routes.js
+│   │   ├── controllers
+│   │   │   ├── header.client.controller.js
+│   │   │   └── home.client.controller.js
+│   │   ├── core.client.module.js
+│   │   ├── css
+│   │   │   └── core.css
+│   │   ├── img
+│   │   │   ├── brand
+│   │   │   │   ├── favicon.ico
+│   │   │   │   └── logo.png
+│   │   │   └── loaders
+│   │   │       └── loader.gif
+│   │   ├── services
+│   │   │   ├── menus.client.service.js
+│   │   │   └── socket.io.client.service.js
+│   │   └── views
+│   │       ├── 404.client.view.html
+│   │       ├── header.client.view.html
+│   │       └── home.client.view.html
+│   ├── server
+│   │   ├── controllers
+│   │   │   ├── core.server.controller.js
+│   │   │   └── errors.server.controller.js
+│   │   ├── routes
+│   │   │   └── core.server.routes.js
+│   │   └── views
+│   │       ├── 404.server.view.html
+│   │       ├── 500.server.view.html
+│   │       ├── index.server.view.html
+│   │       └── layout.server.view.html
+│   └── tests
+│       └── client
+│           ├── core.client.tests.js
+│           ├── header.client.controller.tests.js
+│           ├── home.client.controller.tests.js
+│           ├── menus.client.service.tests.js
+│           └── socket.io.client.service.tests.js
+└── users
+    ├── client
+    │   ├── config
+    │   │   ├── users-admin.client.menus.js
+    │   │   ├── users-admin.client.routes.js
+    │   │   ├── users.client.config.js
+    │   │   └── users.client.routes.js
+    │   ├── controllers
+    │   │   ├── admin
+    │   │   │   ├── user.client.controller.js
+    │   │   │   └── user-list.client.controller.js
+    │   │   ├── authentication.client.controller.js
+    │   │   ├── password.client.controller.js
+    │   │   └── settings
+    │   │       ├── change-password.client.controller.js
+    │   │       ├── change-profile-picture.client.controller.js
+    │   │       ├── edit-profile.client.controller.js
+    │   │       ├── manage-social-accounts.client.controller.js
+    │   │       └── settings.client.controller.js
+    │   ├── css
+    │   │   └── users.css
+    │   ├── img
+    │   │   ├── buttons
+    │   │   │   ├── facebook.png
+    │   │   │   ├── github.png
+    │   │   │   ├── google.png
+    │   │   │   ├── linkedin.png
+    │   │   │   ├── paypal.png
+    │   │   │   └── twitter.png
+    │   │   └── profile
+    │   │       ├── default.png
+    │   │       └── uploads
+    │   ├── services
+    │   │   ├── authentication.client.service.js
+    │   │   └── users.client.service.js
+    │   ├── users.client.module.js
+    │   └── views
+    │       ├── admin
+    │       │   ├── user.client.view.html
+    │       │   ├── user-edit.client.view.html
+    │       │   └── user-list.client.view.html
+    │       ├── authentication
+    │       │   ├── authentication.client.view.html
+    │       │   ├── signin.client.view.html
+    │       │   └── signup.client.view.html
+    │       ├── password
+    │       │   ├── forgot-password.client.view.html
+    │       │   ├── reset-password.client.view.html
+    │       │   ├── reset-password-invalid.client.view.html
+    │       │   └── reset-password-success.client.view.html
+    │       └── settings
+    │           ├── change-password.client.view.html
+    │           ├── change-profile-picture.client.view.html
+    │           ├── edit-profile.client.view.html
+    │           ├── manage-social-accounts.client.view.html
+    │           └── settings.client.view.html
+    ├── server
+    │   ├── config
+    │   │   ├── strategies
+    │   │   │   ├── facebook.js
+    │   │   │   ├── github.js
+    │   │   │   ├── google.js
+    │   │   │   ├── linkedin.js
+    │   │   │   ├── local.js
+    │   │   │   ├── paypal.js
+    │   │   │   └── twitter.js
+    │   │   └── users.server.config.js
+    │   ├── controllers
+    │   │   ├── admin.server.controller.js
+    │   │   ├── users
+    │   │   │   ├── users.authentication.server.controller.js
+    │   │   │   ├── users.authorization.server.controller.js
+    │   │   │   ├── users.password.server.controller.js
+    │   │   │   └── users.profile.server.controller.js
+    │   │   └── users.server.controller.js
+    │   ├── models
+    │   │   └── user.server.model.js
+    │   ├── policies
+    │   │   └── admin.server.policy.js
+    │   ├── routes
+    │   │   ├── admin.server.routes.js
+    │   │   ├── auth.server.routes.js
+    │   │   └── users.server.routes.js
+    │   └── templates
+    │       ├── reset-password-confirm-email.server.view.html
+    │       └── reset-password-email.server.view.html
+    └── tests
+        ├── client
+        │   ├── authentication.client.controller.tests.js
+        │   └── password.client.controller.tests.js
+        ├── e2e
+        │   └── users.e2e.tests.js
+        └── server
+            ├── user.server.model.tests.js
+            └── user.server.routes.tests.js
+
+74 directories, 121 files
